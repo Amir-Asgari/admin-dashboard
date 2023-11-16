@@ -11,7 +11,7 @@ import {
   Employees,
   Stacked,
   Pyramid,
-  Customers,
+  Customer,
   Kanban,
   Area,
   Bar,
@@ -77,11 +77,10 @@ function App() {
             {/* {Dashboard} */}
             <Route path="/" element={<Ecommerce/>} />
             <Route path="/ecommerce" element={<Ecommerce/>} />
-
             {/* {Pages} */}
             <Route path="/orders" element={<Orders/>} />
             <Route path="/employees" element={<Employees/>} />
-            <Route path="/customers" element={<Customers/>} />
+            <Route path="/customers" element={<Customer/>} />
             {/* {Apps} */}
             <Route path="/kanban " element={<Kanban/>} />
             <Route path="/editor" element={<Editor/>} />
