@@ -9,7 +9,7 @@ import { links } from "../data/dummy";
 const Sidebar = () => {
   const activeMenu = true;
   return (
-    <div
+    <div 
       className="ml-3 h-screen md:overflow-hidden overflow-auto
     md:hover:overflow-auto pb-10 "
     >
@@ -19,8 +19,8 @@ const Sidebar = () => {
             className="flex justify-between 
       item-center"
           >
-            <Link to="/" onClick={() => {}} className="items-center">
-              <SiShopware /> <span> Shoppy</span>
+            <Link to="/" onClick={() => {}} className="items-center gap-3">
+              <SiShopware /> <span> Shoppy  </span>
             </Link>
           </div>
         </>
