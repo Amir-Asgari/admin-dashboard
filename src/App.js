@@ -6,7 +6,7 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups/src";
 import { Navbar, Footer, Sidebar, themeSetting } from "./components";
 import {
   Ecommerce,
-  Order,
+  Orders,
   Calender,
   Employees,
   Stacked,
@@ -20,6 +20,7 @@ import {
   ColorPicker,
   ColorMapping,
   Editor,
+  Line
 } from "./pages";
 
 function App() {
@@ -56,6 +57,14 @@ function App() {
             className={`dark:bg-main-bg bg-main-bg min-h-screen w-full
           ${activeMenu ? "md:ml-72" : "flex-2"}`}
           >
+            <div
+              className="fixed md:static bg-main-bg
+             dark:bg-main-dark-bg navbar w-full"
+            >
+              <Navbar/>
+            </div>
+          </div>
+
           <div
             className="fixed md:static bg-main-bg
            dark:bg-main-dark-bg navbar w-full"
@@ -68,11 +77,10 @@ function App() {
             {/* {Dashboard} */}
             <Route path="/" element={<Ecommerce/>} />
             <Route path="/ecommerce" element={<Ecommerce/>} />
-
             {/* {Pages} */}
             <Route path="/orders" element={<Orders/>} />
             <Route path="/employees" element={<Employees/>} />
-            <Route path="/customers" element={<Customers/>} />
+            <Route path="/customers" element={<Customer/>} />
             {/* {Apps} */}
             <Route path="/kanban " element={<Kanban/>} />
             <Route path="/editor" element={<Editor/>} />
@@ -89,7 +97,6 @@ function App() {
             <Route path="/stacked " element={<Stacked/>} />
           </Routes>
         </div>
-      </div>
     </BrowserRouter>
   </div>
 );

@@ -2,7 +2,12 @@
 
     "cSpell.words": [
         "kanban",
+<<<<<<< HEAD
         "richtexteditor",
+=======
+        "Shoppy",
+        "Shopware",
+>>>>>>> 6e0a0a5a2cf0bb8923a4370c4dc6e3610bf2eb7c
         "syncfusion",
         "tailwindcss"
     ]
