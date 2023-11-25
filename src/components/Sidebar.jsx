@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
-
 import { links } from "../data/dummy";
 
 const Sidebar = () => {
   const activeMenu = true;
+  const isActive = false;
 
   const activeLink =
-    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-white text-md m2";
+    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-white bg-gray-400 text-md m2";
   const normalLink =
     "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover-bg-light-gray m2";
   return (
@@ -27,12 +27,14 @@ const Sidebar = () => {
             <Link
               to="/"
               onClick={() => {}}
-              className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
+              className="items-center gap-3 ml-3 mt-4 flex
+               text-xl font-extrabold tracking-tight
+                dark:text-white text-slate-900"
             >
               <SiShopware /> <span> Shoppy </span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
-              <Button
+              <button
                 type="button"
                 onClick={() => {}}
                 className="text-1 rounded-full 
@@ -40,7 +42,7 @@ const Sidebar = () => {
               md:hidden"
               >
                 <MdOutlineCancel />
-              </Button>
+              </button>
             </TooltipComponent>
           </div>
           <div className="mt-10">
@@ -52,23 +54,19 @@ const Sidebar = () => {
                 >
                   {item.title}
                 </p>
-                {
-                  (item.links,
-                  map((link) => (
-                    <NavLink
-                      to={`/${link.name}`}
-                      key={link.name}
-                      onClick={() => {}}
-                      className={({ isActive }) =>
-                        isActive ? activeLink : normalLink
-                      }
-                    >
-                      {link.icon}
-                      <span className="cappitalize"> </span>
-                      {link.name}
-                    </NavLink>
-                  )))
-                }
+                {item.links.map((link) => (
+                  <NavLink
+                    to={`/${link.name}`}
+                    key={link.name}
+                    onClick={() => {}}
+                    className={({ isActive }) =>
+                      isActive ? activeLink : normalLink
+                    }
+                  >
+                    {link.icon}
+                    <span className="capitalize">{link.name}</span>
+                  </NavLink>
+                ))}
               </div>
             ))}
           </div>
