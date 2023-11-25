@@ -20,14 +20,13 @@ import {
   ColorPicker,
   ColorMapping,
   Editor,
-  Line
+  Line,
 } from "./pages";
 
-import {useStateContext} from './contexts/ContextProvider'
+import { useStateContext } from "./contexts/ContextProvider";
 
 function App() {
-
-  const activeMenu = useStateContext()
+  const activeMenu = useStateContext();
 
   return (
     <div>
@@ -51,10 +50,12 @@ function App() {
               className="w-72 fixed sidebar dark:bg-secondary-dark-bg
           bg-white"
             >
-              <Sidebar/>
+              <Sidebar />
             </div>
           ) : (
-            <div className="w-0 dark:bg-secondary-dark-bg "><Sidebar/> w-0</div>
+            <div className="w-0 dark:bg-secondary-dark-bg ">
+              <Sidebar /> w-0
+            </div>
           )}
           <div
             className={`dark:bg-main-bg bg-main-bg min-h-screen w-full
@@ -64,7 +65,7 @@ function App() {
               className="fixed md:static bg-main-bg
              dark:bg-main-dark-bg navbar w-full"
             >
-              <Navbar/>
+              <Navbar />
             </div>
           </div>
 
@@ -72,36 +73,36 @@ function App() {
             className="fixed md:static bg-main-bg
            dark:bg-main-dark-bg navbar w-full"
           >
-            <Navbar/>
+            <Navbar />
           </div>
         </div>
         <div>
           <Routes>
             {/* {Dashboard} */}
-            <Route path="/" element={<Ecommerce/>} />
-            <Route path="/ecommerce" element={<Ecommerce/>} />
+            <Route path="/" element={<Ecommerce />} />
+            <Route path="/ecommerce" element={<Ecommerce />} />
             {/* {Pages} */}
-            <Route path="/orders" element={<Orders/>} />
-            <Route path="/employees" element={<Employees/>} />
-            <Route path="/customers" element={<Customer/>} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/employees" element={<Employees />} />
+            <Route path="/customers" element={<Customer />} />
             {/* {Apps} */}
-            <Route path="/kanban " element={<Kanban/>} />
-            <Route path="/editor" element={<Editor/>} />
-            <Route path="/calender" element={<Calender/>} />
-            <Route path="/color-picker" element={<ColorPicker/>} />
+            <Route path="/kanban " element={<Kanban />} />
+            <Route path="/editor" element={<Editor />} />
+            <Route path="/calender" element={<Calender />} />
+            <Route path="/color-picker" element={<ColorPicker />} />
             {/* {CHarts} */}
-            <Route path="/line " element={<Line/>} />
-            <Route path="/area " element={<Area/>} />
-            <Route path="/bar " element={<Bar/>} />
-            <Route path="/pie " element={<Pie/>} />
-            <Route path="/financial " element={<Financial/>} />
-            <Route path="/color_mapping " element={<ColorMapping/>} />
-            <Route path="/pyramid " element={<Pyramid/>} />
-            <Route path="/stacked " element={<Stacked/>} />
+            <Route path="/line " element={<Line />} />
+            <Route path="/area " element={<Area />} />
+            <Route path="/bar " element={<Bar />} />
+            <Route path="/pie " element={<Pie />} />
+            <Route path="/financial " element={<Financial />} />
+            <Route path="/color_mapping " element={<ColorMapping />} />
+            <Route path="/pyramid " element={<Pyramid />} />
+            <Route path="/stacked " element={<Stacked />} />
           </Routes>
         </div>
-    </BrowserRouter>
-  </div>
-);
+      </BrowserRouter>
+    </div>
+  );
 }
 export default App;
