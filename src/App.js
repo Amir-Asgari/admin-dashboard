@@ -23,8 +23,11 @@ import {
   Line
 } from "./pages";
 
+import {useStateContext} from './contexts/ContextProvider'
+
 function App() {
-  const activeMenu = true;
+
+  const activeMenu = useStateContext()
 
   return (
     <div>
