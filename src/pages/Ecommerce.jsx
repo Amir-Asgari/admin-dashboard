@@ -40,6 +40,7 @@ const Ecommerce = () => {
               bgColor="blue"
               text="Download"
               boarderRadius="10px"
+              size="md"
             />
           </div>
         </div>
