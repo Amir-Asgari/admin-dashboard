@@ -59,14 +59,14 @@ const Sidebar = () => {
                     to={`/${link.name}`}
                     key={link.name}
                     onClick={() => {}}
-                    className={({isActive}) =>
+                    className={({ isActive }) =>
                       isActive ? activeLink : normalLink
                     }
                   >
                     {link.icon}
                     <span className="capitalize">{link.name}</span>
                   </NavLink>
-                ))};
+                ))}
               </div>
             ))}
           </div>

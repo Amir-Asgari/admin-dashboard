@@ -11,7 +11,7 @@ import { Cart, Chat, Notifications, UserProfile } from ".";
 import { useStateContext } from "../contexts/ContextProvider";
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
-  <TooltipComponent content={title} position="ButtonCenter">
+  <TooltipComponent content={title} position="BottomCenter">
     <button
       type="button"
       onClick={customFunc}
@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className=" flex justify-between p-2 md:mx-6 relative">
       <NavButton
-        title="menu"
+        title="Menu"
         customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
         color="blue"
         icon={<AiOutlineMenu />}
