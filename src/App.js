@@ -30,32 +30,30 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
+        <BrowserRouter>
         <div className="flex relative dark:bg-main-dark-bg">
-          <div className="fixed right-4 bottom-4 " style={{ zIndex: "1000" }}>
-            <TooltipComponent content="Setting" position="top">
+          <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
+            <TooltipComponent
+              content="Settings"
+              position="Top"
+            >
               <button
                 type="button"
-                className="text-3xl p-3 
-                hover:drop-shadow-xl hover:bg-light-gray 
-            text-white"
-                style={{ background: "blue", borderRadius: "50%" }}
+                style={{  borderRadius: '50%' }}
+                className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
               >
                 <FiSettings />
               </button>
+
             </TooltipComponent>
           </div>
           {activeMenu ? (
-            <div
-              className="w-72 fixed sidebar dark:bg-secondary-dark-bg
-          bg-white"
-            >
+            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
               <Sidebar />
             </div>
           ) : (
-            <div className="w-0 dark:bg-secondary-dark-bg ">
+            <div className="w-0 dark:bg-secondary-dark-bg">
               <Sidebar />
-              <p style={{ color: "black" }}>w-0</p>
             </div>
           )}
           <div
@@ -65,10 +63,7 @@ function App() {
                 : "bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 "
             }
           >
-            <div
-              className="fixed md:static bg-main-bg
-             dark:bg-main-dark-bg navbar w-full"
-            >
+            <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
               <Navbar />
             </div>
 
