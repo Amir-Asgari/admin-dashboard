@@ -8,6 +8,7 @@ import {
   SparklineAreaData,
   ecomPieChartData,
 } from "../data/dummy";
+import Banner from "../data/Banner.png";
 
 import { useStateContext } from "../contexts/ContextProvider";
 
@@ -19,12 +20,14 @@ const Ecommerce = () => {
           className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full 
         lg:w-100 sm:w-auto p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center"
         >
-          <div className="flex justify-between items-center">
+          <div
+            style={{ marginTop: 0 }}
+            className="flex justify-between items-center "
+          >
             <div className="flex">
               <p className="font-bold text-gray-400">Earnings</p>
-              <p className="text-2xl"> $63,448,78</p>
+              <p className="text-2xl">$63,448,78</p>
             </div>
-            <div className="m-42 bg-red-400 px-10 ml-20">Banner</div>
           </div>
           <div className="mt-6">
             <Button
@@ -36,6 +39,7 @@ const Ecommerce = () => {
             />
           </div>
         </div>
+          <img src={Banner} />
       </div>
 
       <div
