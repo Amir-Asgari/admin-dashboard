@@ -1,4 +1,5 @@
 import React from "react";
+import * as ReactDOM from "react-dom";
 import {
   ChartComponent,
   SeriesCollectionDirective,
@@ -21,12 +22,20 @@ const Stacked = ({ width, height }) => {
     <ChartComponent
       width={width}
       height={height}
-      id="stack chart"
+      id="charts"
+      title="Sales Comparison"
       // primaryXAxis={stackedPrimaryXAxis}
       // primaryYAxis={stackedPrimaryYAxis}
       chartArea={{ border: { width: 0 } }}
+      tooltip={{background :'white'}}
     >
-      <Inject services={[Legend, Category, stackedCustomSeries, Tooltip]} />
+      <Inject services={[Legend, Tooltip, Category, ]} />
+      {/* <Inject services={[Legend, Category, stackedCustomSeries, Tooltip]} /> */}
+      <SeriesCollectionDirective>
+        {/* {StackingColumnSeries.map((item, index) => {
+          <SeriesDirective key={index} {...item} />;
+        })} */}
+      </SeriesCollectionDirective>
     </ChartComponent>
   );
 };
