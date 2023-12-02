@@ -15,11 +15,16 @@ import { useStateContext } from "../contexts/ContextProvider";
 const Ecommerce = () => {
   return (
     <div className="mt-24">
-      <div className="flex flex-wrap sm:flex-nowrap justify-center w-auto items-center">
-        <div
-          className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full 
-        lg:w-100 sm:w-auto p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center"
-        >
+<div className="flex flex-wrap  drop-shadow-xl sm:flex-nowrap justify-center w-200 items-center">
+  <div
+    className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl bg-w-full lg:w-100 sm:w-auto p-8 pt-9 m-3"
+    style={{
+      backgroundImage: "url('https://i.ibb.co/TrQZCDZ/Rectangle-4389.png')",
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100% 100%',
+      backgroundPosition: 'center',
+    }}
+  >
           <div
             style={{ marginTop: 0 }}
             className="flex justify-between items-center "
@@ -39,9 +44,9 @@ const Ecommerce = () => {
             />
           </div>
         </div>
-        <div className=" flex wrap">
+        {/* <div className=" flex wrap">
           <img src={Banner} />
-        </div>
+        </div> */}
       </div>
 
       <div
@@ -51,7 +56,7 @@ const Ecommerce = () => {
         {earningData.map((item) => (
           <div
             key={item.title}
-            className="bg-white
+            className="bg-white drop-shadow-xl
             dark:text-gray-200
             dark:bg-secondary-dark-bg md:w-56
             p-4 pt-9 rounded-2xl"
