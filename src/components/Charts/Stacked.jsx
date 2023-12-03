@@ -24,17 +24,17 @@ const Stacked = ({ width, height }) => {
       height={height}
       id="charts"
       title="Sales Comparison"
-      // primaryXAxis={stackedPrimaryXAxis}
-      // primaryYAxis={stackedPrimaryYAxis}
+      primaryXAxis={stackedPrimaryXAxis}
+      primaryYAxis={stackedPrimaryYAxis}
       chartArea={{ border: { width: 0 } }}
-      tooltip={{background :'white'}}
+      tooltip={{ enable: true }}
+      legendSettings={{ background: "white" }}
     >
-      <Inject services={[Legend, Tooltip, Category, ]} />
-      {/* <Inject services={[Legend, Category, stackedCustomSeries, Tooltip]} /> */}
+      <Inject services={[Legend, Category, StackingColumnSeries, Tooltip]} />
       <SeriesCollectionDirective>
-        {/* {StackingColumnSeries.map((item, index) => {
-          <SeriesDirective key={index} {...item} />;
-        })} */}
+        {stackedCustomSeries.map((item, index) => (
+          <SeriesDirective key={index} {...item} />
+        ))}
       </SeriesCollectionDirective>
     </ChartComponent>
   );
