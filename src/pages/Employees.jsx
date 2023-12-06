@@ -19,7 +19,7 @@ const Employees = () => {
         dataSource={employeesData}
         allowPaging
         allowSorting
-        toolbar={["Search"]}
+        toolbar={["Search"]} 
         width="auto"
       >
         <ColumnsDirective>
