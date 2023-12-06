@@ -19,7 +19,7 @@ const Employees = () => {
         dataSource={employeesData}
         allowPaging
         allowSorting
-        toolbar={["Search"]} 
+        toolbar={["Search"]}
         width="auto"
       >
         <ColumnsDirective>
@@ -27,7 +27,7 @@ const Employees = () => {
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
-        <Inject services={[Page, Search , Toolbar]} />
+        <Inject services={[Page, Search, Toolbar]} />
       </GridComponent>
     </div>
   );
