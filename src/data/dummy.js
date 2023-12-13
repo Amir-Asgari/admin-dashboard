@@ -3087,11 +3087,7 @@ export const SparklineAreaData = [
   { x: 2, yval: 6 },
   { x: 3, yval: 8 },
   { x: 4, yval: 5 },
-  { x: 5, yval: 7 },
-  { x: 6, yval: 9 },
-  { x: 7, yval: 6 },
-  { x: 8, yval: 12 },
-  { x: 9, yval: 11 },
+  { x: 5, yval: 10 },
 
 ];
 
