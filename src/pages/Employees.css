@@ -1,0 +1,54 @@
+.e-row:hover {
+    background-color: gray;
+    border-radius: 15px;
+    padding: 0 10px;
+  }
+.e-row{
+  border: 1px solid rgba(128, 128, 128, 0.24);
+  border-radius: 10px;
+  padding:15px;
+  margin:15px;
+}
+  .e-grid {
+  padding: 5px 10px;
+  box-shadow: 5px;
+    /* border: 1px solid rgba(128, 128, 128, 0.486); */
+  }
+
+  .e-control,
+   .e-toolbar,
+    .e-lib,
+     .e-keyboard{
+      margin-right: 5px;
+  }
+  .e-search-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+
+  }
+
+  .e-hide{
+    display: none;
+  }
+
+  .e-numericcontainer,
+  .e-pagercontainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+  }
+  .e-numericitem,
+  .e-pagenomsg {
+    margin: 5px;
+
+  }
+
+  .e-gridpager,
+   /* .e-control,  */
+   .e-pager
+    {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+  }

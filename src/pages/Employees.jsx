@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { GridComponent, Inject, ColumnsDirective, ColumnDirective, Search, Page } from '@syncfusion/ej2-react-grids';
 
@@ -11,8 +12,35 @@ const Employees = () => {
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+=======
+import React from "react";
+import {
+  GridComponent,
+  ColumnsDirective,
+  ColumnDirective,
+  Page,
+  Search,
+  Inject,
+  Toolbar,
+} from "@syncfusion/ej2-react-grids";
+import { employeesData, employeesGrid } from "../data/dummy";
+import { Header } from "../components";
+import './Employees.css'
+
+const Employees = () => {
+
+  // const rowHoverStyle = {
+  //   backgroundColor: "gray",
+  //   border: "1px solid red", // افزودن خط قرمز در حالت هاور
+  // };
+
+  
+  return (
+    <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl ">
+>>>>>>> 3ad7d5d7f536f7fc98f604d0f9dd9261e937d5a2
       <Header category="Page" title="Employees" />
       <GridComponent
+        id="gridcomp"
         dataSource={employeesData}
         width="auto"
         allowPaging
