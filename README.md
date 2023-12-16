@@ -3,9 +3,34 @@
 
 
 
-## Introduction
-This is a code repository for the corresponding video tutorial.
+#Feature
++ SPA with "react-router-dom"
++ Tailwind css
++ State management with useReducer Hook and Context API
++ LTR webSite
++ Full Responsive on All Devices,
++ First Mobile app
++ > Add Real data (Coming Soon)
 
-If you want to get a finished, highly customizable Material UI version of a similar dashboard, check out [Flexy React Material Dashboard](https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=257&campaign=Flexy).
+Run
+Clone the project
+```
+https://github.com/Amir-Asgari/admin-dashboard
+```
+Go to the project directory
 
-## Launch your development career with project-based coaching - https://www.jsmastery.pro
+```
+cd online-meals-ordering
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Start the server
+
+```
+npm start
+```
