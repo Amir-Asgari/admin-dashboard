@@ -1,12 +1,36 @@
 # Build and Deploy a React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban and More
 ![Shoppy](https://i.ibb.co/W6g39w3/image.png)
 
-### [🌟 Become a top 1% Next.js 13 developer in only one course](https://jsmastery.pro/next13)
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
 
-## Introduction
-This is a code repository for the corresponding video tutorial.
 
-If you want to get a finished, highly customizable Material UI version of a similar dashboard, check out [Flexy React Material Dashboard](https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=257&campaign=Flexy).
+#Feature
++ SPA with "react-router-dom"
++ Tailwind css
++ State management with useReducer Hook and Context API
++ LTR webSite
++ Full Responsive on All Devices,
++ First Mobile app
++ > Add Real data (Coming Soon)
 
-## Launch your development career with project-based coaching - https://www.jsmastery.pro
+Run
+Clone the project
+```
+https://github.com/Amir-Asgari/admin-dashboard
+```
+Go to the project directory
+
+```
+cd online-meals-ordering
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Start the server
+
+```
+npm start
+```
